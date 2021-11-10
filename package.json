@@ -1,0 +1,30 @@
+{
+  "name": "basic-messenger-server",
+  "version": "1.0.0",
+  "description": "The server for the basic messenger service",
+  "main": "server.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node server.js",
+    "lint": "eslint .",
+    "test": "NODE_ENV=test jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basic-messenger/basic-messenger-server.git"
+  },
+  "author": "MuckT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basic-messenger/basic-messenger-server/issues"
+  },
+  "homepage": "https://github.com/basic-messenger/basic-messenger-server#readme",
+  "dependencies": {
+    "socket.io": "^4.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-plugin-jest": "^25.2.4",
+    "faker": "^5.5.3",
+    "jest": "^27.3.1"
+  }
+}
