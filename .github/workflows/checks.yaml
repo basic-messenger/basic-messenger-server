@@ -1,0 +1,29 @@
+name: CI Checks
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on pull request events for dev and main
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Run ESLint'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  lint: 
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          check-latest: true
+      - run: npm install
+      - run: npm run lint
