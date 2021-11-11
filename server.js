@@ -6,7 +6,7 @@ const io = require('socket.io')(server, {cors:{origin: '*'}})
 const PORT = 8000
 
 io.on('connection', socket => {
-console.log(`connected client : ${socket.id}`)
+  console.log(`connected client : ${socket.id}`)
 
   socket.on('client-chatter', (payload) => {
     console.log('payload: ',payload)
@@ -21,5 +21,5 @@ console.log(`connected client : ${socket.id}`)
 })
 
 server.listen(PORT, ()=>{
-console.log(`chat server @ PORT: ${PORT}...`)
+  console.log(`chat server @ PORT: ${PORT}...`)
 })
