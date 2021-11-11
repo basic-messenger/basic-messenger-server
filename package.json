@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/basic-messenger/basic-messenger-server.git"
   },
-  "author": "MuckT",
+  "author": "antoni909, markjackson28, MuckT, vbchomp",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/basic-messenger/basic-messenger-server/issues"
