@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> The server for the basic messenger service
+> The server for the basic messenger service.
 
 ### 🏠 [Homepage](https://github.com/basic-messenger/basic-messenger-server#readme)
 
